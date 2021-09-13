@@ -4,14 +4,32 @@
 
 def sum arr
   # YOUR CODE HERE
+  if arr.empty?
+    return 0
+  end
+  arr.reduce(:+)
 end
 
 def max_2_sum arr
   # YOUR CODE HERE
+  if arr.empty?
+    return 0
+  end
+  if arr.length == 1
+   return arr[0]
+  end
+  arr.max(2).sum
 end
 
 def sum_to_n? arr, n
   # YOUR CODE HERE
+  if arr.empty?
+    return false
+  end
+  if arr.length == 1
+    return false
+  end
+  !!arr.uniq.combination(2).detect { |a, b| a + b == n }
 end
 
 # Part 2
