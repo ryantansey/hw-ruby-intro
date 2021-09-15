@@ -53,7 +53,7 @@ def binary_multiple_of_4? s
   end
   
   return ((s.to_i(base=2) % 4) == 0)
-end
+end 
 
 # Part 3
 
