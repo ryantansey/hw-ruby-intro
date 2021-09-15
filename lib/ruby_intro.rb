@@ -1,9 +1,10 @@
 # When done, submit this entire file to the autograder.
-
+# Ryan Tansey
+# CSCE 606
+# Fall 2021
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
   if arr.empty?
     return 0
   end
@@ -11,7 +12,6 @@ def sum arr
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
   if arr.empty?
     return 0
   end
@@ -22,7 +22,6 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
   if arr.empty?
     return false
   end
@@ -39,15 +38,10 @@ def hello(name)
 end
 
 def starts_with_consonant? s
-  # YOUR CODE HERE
   return (s.match(/^[^aeiou\W]/i))
 end
 
 def binary_multiple_of_4? s
-  # YOUR CODE HERE
-  #if (s.match(/\D/i))
-  #  return false
-  #end
   if (s.match(/[^01]/) || s.empty?)
     return false
   end
@@ -58,7 +52,6 @@ end
 # Part 3
 
 class BookInStock
-# YOUR CODE HERE
   def initialize(isbn, price)
     raise ArgumentError.new("Invalid argument.") if isbn.empty? or price <= 0.0
     @isbn = isbn
